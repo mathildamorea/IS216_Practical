@@ -37,12 +37,13 @@ elif number < 0:
 else:
     print("\nZero")
 
-# Task 2 - Multipication Table
+# Task 2 - Multipication Table using nested loops
 
-print("\nMultiplication Table for 5")
+print("\nMultiplication Table")
 
-for i in range(1, 11):
-    print(f"5 x {i} = {5 * i}")
+for number in range(5, 6):
+    for i in range(1, 11):
+        print(f"{number} x {i} = {number * i}")
 
 # Task 3 - Prime Number Check
 
