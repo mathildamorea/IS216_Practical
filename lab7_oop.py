@@ -34,10 +34,22 @@ class Student:
     def get_name(self):
         return self.__name
     
+    def set_name(self, name):
+        return self.__name
+    
     def get_age(self):
         return self.__age
+    
+    def set_age(self, age):
+        self.__age = age
 
 student = Student("John", 20)
+
+print(student.get_name())
+print(student.get_age())
+
+student.set_name("Alice")
+student.set_age(21)
 
 print(student.get_name())
 print(student.get_age())
@@ -50,6 +62,10 @@ class Animal:
 
     def sound(self):
         return "Animal Sound"
+    
+class Dog(Animal):
+    def sound(self):
+        return f"{self.name} says Woof!"
 
 class Cat(Animal):
     def sound(self):
@@ -59,9 +75,11 @@ class Bird(Animal):
     def sound(self):
         return f"{self.name} says Tweet"
     
+dog = Dog("Buddy")
 cat = Cat("Kitty")
 bird = Bird("Tweety")
 
+print(dog.sound())
 print(cat.sound())
 print(bird.sound())
 
