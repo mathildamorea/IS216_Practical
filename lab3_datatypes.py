@@ -57,9 +57,13 @@ books = [
     {"title": "Book Three", "author": "Author Three"}
 ]
 
-print("\nBooks")
+print("\nAccessing Book Details")
 for item in books:
     print(item)
+
+print("Book 1 Title:", books[0]["title"])
+print("Book 2 Author:", books[1]["author"])
+print("Book 3 Title:", books[2]["title"])
 
 # Type Checking
 
